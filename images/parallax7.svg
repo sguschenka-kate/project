@@ -1,0 +1,39 @@
+<svg width="143" height="143" viewBox="0 0 143 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.2" clip-path="url(#clip0)" filter="url(#filter0_f)">
+<path d="M87.2056 96.2629L28.8698 99.5643L55.3024 47.3005L113.79 44.2316L87.2056 96.2629Z" fill="url(#paint0_linear)"/>
+<path d="M113.79 44.2316L87.2056 96.2629L88.2269 97.8304L114.805 45.7905L113.79 44.2316Z" fill="url(#paint1_linear)"/>
+<path d="M28.8699 99.5645L87.2057 96.2631L88.2271 97.8306L29.8856 101.123L28.8699 99.5645Z" fill="url(#paint2_linear)"/>
+</g>
+<defs>
+<filter id="filter0_f" x="-9.92126" y="-9.42212" width="162.244" height="162.244" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur"/>
+</filter>
+<linearGradient id="paint0_linear" x1="89.4554" y1="99.7157" x2="54.3739" y2="45.8756" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0A166C"/>
+<stop offset="0.1323" stop-color="#22207F"/>
+<stop offset="0.4082" stop-color="#4F33A2"/>
+<stop offset="0.6545" stop-color="#7041BC"/>
+<stop offset="0.8598" stop-color="#8449CB"/>
+<stop offset="0.9988" stop-color="#8B4CD1"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="113.929" y1="45.8587" x2="87.2591" y2="97.8113" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2A1B80"/>
+<stop offset="0.1597" stop-color="#3B248F"/>
+<stop offset="0.5057" stop-color="#5C34AC"/>
+<stop offset="0.7955" stop-color="#703EBE"/>
+<stop offset="0.9917" stop-color="#7742C4"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="86.0559" y1="97.1887" x2="31.5077" y2="100.178" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2B1881"/>
+<stop offset="0.268" stop-color="#4D2B9E"/>
+<stop offset="0.5723" stop-color="#6E3CB9"/>
+<stop offset="0.8273" stop-color="#8247CA"/>
+<stop offset="1" stop-color="#894BD0"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="102.795" height="102.795" fill="white" transform="translate(0.0787354 56.6963) rotate(-33.0877)"/>
+</clipPath>
+</defs>
+</svg>

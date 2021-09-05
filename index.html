@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="body">
+
+  <header class="header">
+    <div class="container header-container">
+      <img src="./images/logo.svg" class="logo" alt="NOVA logo">
+      <button class="burger-btn">
+        <img class="burger-image" src="./images/burger.svg" alt="Burger menu"/>
+        <img class="close-image" src="./images/close.svg" alt="Close menu"/>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link-active localization" caption="bonuses"></a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link localization" caption="products"></a>
+          </li>
+          <li class="nav__item" >
+            <a href="#" class="nav__link localization" caption="platforms"></a>
+          </li>
+          <li class="nav__item" >
+            <a href="#" class="nav__link localization" caption="trading_information"></a>
+          </li>
+          <li class="nav__item" >
+            <a href="#" class="nav__link localization" caption="training"></a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="header__actions">
+        <div class="select">
+          <div class="slct">
+            <img src="./images/england.svg" class="slct-image" id="language-en" alt="EN language">
+            <img src="./images/russia.svg" class="slct-image" id="language-ru" alt="RU language">
+          </div>
+  
+          <ul class="drop">
+            <li class="drop__item drop__item-active localization" id="li-language-en" caption="en">
+            </li>
+            <li class="drop__item localization" id="li-language-ru" caption="ru">
+            </li>
+          </ul>
+          <input type="hidden" id="select" />
+       
+        </div>
+  
+        <a href="#" class="border-button header__button localization" caption="login">Log In</a>
+      </div>
+    </div>
+
+  </header>
+
+  <main id="main-content" class="main-content">
+
+    <section class="hero gradient-1476px gradient-688px">
+      <div class="container hero-container">
+        <h1 class="hero__h1 localization" caption="hero_h1"></h1>
+        <p class="hero__description localization" caption="hero_description"></p>
+  
+        <div class="hero__buttons">
+          <a href="#" class="solid-button hero__btn localization" caption="open_an_account"></button>
+          <a href="#profit_calculator" class="text-button hero__btn hero__text-button localization" caption="calc_profit"></a>
+        </div>
+  
+        <ul class="hero__details">
+          <li class="details__item">
+            <img class="details__icon" src="./images/icon-reward.svg" alt="Reward icon" />
+            <span class="details__text localization" caption="withdrawal_of_funds"></span>
+          </li>
+          <li class="details__item">
+            <img class="details__icon" src="./images/icon-experts.svg" alt="Experts icon" />
+            <span class="details__text localization" caption="proven_broker"></span>
+          </li>   
+        </ul>
+  
+        <a href="#about" id="heroScroll" class="hero__scroll">
+          <img class="scroll__icon" src="./images/icon-frame.svg" alt="Frame icon" />
+          <span class="scroll__text localization" caption="hero_scroll"></span>
+        </a>
+      </div>
+    </section>
+
+    
+    <section class="about" id="about">
+      <div id="parallax5" class="parallax__mousemove" data-speed="-10"></div>
+      <div id="parallax9" class="parallax__scroll" data-speed="6"></div>
+      <div class="container">
+        <div class="about__container">
+          <div class="about__info">
+            <div id="parallax1" class="parallax__scroll" data-speed="-3"></div>
+            <div id="parallax2" class="parallax__mousemove" data-speed=-6></div>
+            <div id="parallax3" class="parallax__mousemove" data-speed="10"></div>
+            <h2 class="about__caption localization" caption="about_h2"></h2>
+            <p class="about__description localization" caption="about__description"></p>
+          </div>
+  
+          <ul class="numbers__list">
+            <li class="numbers__item">
+              <p class="numbers__sum">
+                25<span class="numbers__sum--dollar">$</span>
+              </p>
+              <p class="numbers__text localization" caption="min_investment"></p>
+            </li>
+            <li class="numbers__item">
+              <p class="numbers__sum">
+                250<span class="numbers__sum--dollar">$</span>
+              </p>
+              <p class="numbers__text localization" caption="start_deposit"></p>
+            </li>
+             <li class="numbers__item numbers__item--max-profit">
+               <p class="numbers__sum numbers__sum--max-profit">
+                 <span class="numbers__sum--to localization" caption="to"></span>
+                 90<span class="numbers__sum--dollar">$</span>
+              </p>
+               <p class="numbers__text localization" caption="max_profit"></p>
+             </li>
+          </ul>
+        </div>
+  
+        <div id="parallax8" class="parallax__scroll" data-speed="16"></div>
+        <ul class="advantages__list">
+          
+          <li class="advantages__item">
+            <img class="advantages__image" src="./images/icon-reward2.svg" alt="Reward 2 icon" />
+            <h4 class="advantages__caption localization" caption="h4_fast_access"></h4>
+            <p class="advantages__description localization" caption="desc_fast_access"></p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__image" src="./images/icon-cloud-technologies.svg" alt="Cloud technologies icon" />
+            <h4 class="advantages__caption localization" caption="h4_trade_on_go"></h4>
+            <p class="advantages__description localization" caption="desc_trade_on_go"></p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__image" src="./images/icon-enterprise.svg" alt="Enterprise icon" />
+            <h4 class="advantages__caption localization" caption="h4_support_service"></h4>
+            <p class="advantages__description localization" caption="desc_support_service"></p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__image" src="./images/icon-sales-process.svg" alt="Sales process icon" />
+            <h4 class="advantages__caption localization" caption="h4_profitability"></h4>
+            <p class="advantages__description localization" caption="desc_profitability"></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="screen-mac-relative">
+      <div class="screen-mac">
+        <header class="sreen-mac__header">
+          <div class="sreen-mac__image-container">
+            <img class="sreen-mac__image" src="./images/btn-window.svg" alt="Button window" />
+          </div>
+          <div class="sreen-mac__search-field">
+            <p class="sreen-mac__url localization" caption="url"></p>
+          </div>
+        </header>
+      </div>
+    </div>
+    
+    <section id="profit_calculator" class="calculator-section gradient-1006px-after gradient-1006px-before">
+      <div class="container calculator-container gradient-1006px-after">
+        <h2 class="calculator__caption localization" caption="h2_calc_your_profit"></h2>
+        <p class="calculator__description localization" caption="calc_description"></h2>
+        <div class="range-container">
+          <div class="input-container">
+            <input
+              type="text"
+              class="js-range-slider"
+              value=""
+              id="input-0" 
+            />
+          </div>
+          <div class="input-container">
+            <input
+              type="text"
+              class="js-range-slider"
+              id="input-1" 
+            />
+          </div>
+        </div>
+
+        <ul class="profit-list">
+          <li class="profit-list__item">
+            <p class="profit-list__value" id="period"></p>
+            <p class="profit-list__caption localization" caption="your_period"></p>
+          </li>
+          <li class="profit-list__item">
+            <p class="profit-list__value" id="investment"></p>
+            <p class="profit-list__caption localization" caption="your_investment"></p>
+          </li>
+          <li class="profit-list__item">
+            <p class="profit-list__value" id="profit"></p>
+            <p class="profit-list__caption localization" caption="your_profit"></p>
+          </li>
+        </ul>
+
+      </div>
+      <div class="calc-left-decor gradient-1006px-before"></div>
+      <div class="calc-right-decor gradient-1006px-before"></div>
+    </section>
+
+    <div class="button-relative">
+      <a href="#" class="solid-button button-absolute localization" caption="open_an_account"></a>
+    </div>
+
+    <section class="steps">
+      <div class="parallax__mousemove"  id="parallax4" data-speed="14"></div>
+      <div class="parallax__mousemove" id="parallax7" data-speed="-16"></div>
+      <div class="steps-decor-right gradient-1006px-before"></div>
+      <p class="steps__note localization" caption="steps__note"></p>
+      <div class="container steps-container">
+        <div class="steps__first-block">
+          <h2 class="steps__caption localization" caption="steps__caption"></h2>
+          <ul class="reasons">
+            <li class="reasons__item">
+              <p class="reasons__caption localization" caption="deposit_and_withdrawal"></p>
+              <p class="reasons__description localization" caption="deposit_and_withdrawal_descr"></p>
+            </li>
+            <li class="reasons__item">
+              <p class="reasons__caption localization" caption="wide_asset_selection"></p>
+              <p class="reasons__description localization" caption="wide_asset_selection_descr"></p>
+            </li>
+          </ul>
+  
+          <div class="steps__buttons">
+            <a class="solid-button localization" caption="open_an_account"></a>
+            <a href="#plans" class="text-button hero__text-button localization" caption="our_plans"></a>
+          </div>
+        </div>
+
+        <div class="steps__second-block">
+          <ul class="steps__list">
+            <li class="steps__item">
+              <h3 class="steps__variant localization" caption="acc_registration"></h3>
+              <p class="steps__description localization" caption="acc_registr_descr"></p>
+            </li>
+            <li class="steps__item">
+              <h3 class="steps__variant localization" caption="verification"></h3>
+              <p class="steps__description localization" caption="verification_descr"></p>
+            </li>
+            <li class="steps__item">
+              <h3 class="steps__variant localization" caption="deposit_funds"></h3>
+              <p class="steps__description localization" caption="deposit_funds_descr"></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="crypto__exchanges">
+      <div class="crypto__exchanges-decor-left gradient-1006px-after"></div>
+
+      <div id="parallax10" class="parallax__scroll" data-speed="18"></div>
+
+      <div class="container crypto-exchanges-container">
+        <h2 class="crypto-exchanges__caption localization" caption="crypto_exchanges"></h2>
+        <ul class="exchanges__list">
+          <li class="exchange__item">
+            <a href="#">
+              <svg width="204" height="41" viewBox="0 0 204 41" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                  <path d="M47.9981 9.97475C41.8975 9.97475 37.1525 14.6059 37.1525 20.8239C37.1525 27.0419 41.8006 31.6406 47.9981 31.6406C54.1956 31.6406 58.9082 26.9771 58.9082 20.7915C58.9405 14.6706 54.2924 9.97475 47.9981 9.97475ZM48.0304 27.1714C44.5766 27.1714 42.0266 24.4834 42.0266 20.8563C42.0266 17.1967 44.512 14.4763 47.9981 14.4763C51.5165 14.4763 54.0342 17.2291 54.0342 20.8563C54.0342 24.4834 51.5165 27.1714 48.0304 27.1714ZM60.2639 14.703H63.2981V31.2196H68.1399V10.3958H60.2639V14.703ZM24.9836 14.4439C27.5336 14.4439 29.5348 16.0308 30.3095 18.3626H35.4418C34.5057 13.3752 30.4063 9.97475 25.0481 9.97475C18.9475 9.97475 14.2025 14.6059 14.2025 20.8239C14.2025 27.0419 18.8506 31.6406 25.0481 31.6406C30.2772 31.6406 34.4734 28.2402 35.4095 23.2204H30.3095C29.5994 25.5522 27.5658 27.1714 25.0158 27.1714C21.5298 27.1714 19.0443 24.4511 19.0443 20.8239C19.0443 17.1643 21.4652 14.4439 24.9836 14.4439ZM152.161 18.816L148.61 18.2978C146.932 18.0711 145.705 17.4882 145.705 16.1604C145.705 14.703 147.287 13.9905 149.417 13.9905C151.741 13.9905 153.258 14.9945 153.581 16.6462H158.261C157.745 12.4684 154.517 10.0071 149.546 10.0071C144.414 10.0071 141.025 12.6304 141.025 16.3223C141.025 19.8847 143.252 21.925 147.706 22.5727L151.257 23.0909C153 23.3176 153.968 24.03 153.968 25.2931C153.968 26.9447 152.29 27.6248 149.934 27.6248C147.061 27.6248 145.447 26.459 145.221 24.6778H140.476C140.928 28.7583 144.091 31.6082 149.901 31.6082C155.195 31.6082 158.681 29.1793 158.681 25.034C158.713 21.3421 156.163 19.4313 152.161 18.816ZM65.6867 1.81361C63.9114 1.81361 62.588 3.10903 62.588 4.89023C62.588 6.67143 63.9114 7.96685 65.6867 7.96685C67.462 7.96685 68.7855 6.67143 68.7855 4.89023C68.7855 3.10903 67.462 1.81361 65.6867 1.81361ZM136.699 17.5206C136.699 13.019 133.956 9.97475 128.146 9.97475C122.658 9.97475 119.592 12.7599 118.979 17.0348H123.788C124.014 15.3831 125.305 14.0229 128.049 14.0229C130.502 14.0229 131.729 15.124 131.729 16.4518C131.729 18.2007 129.501 18.6217 126.758 18.9131C123.046 19.3018 118.462 20.5972 118.462 25.455C118.462 29.2117 121.238 31.6082 125.692 31.6082C129.146 31.6082 131.341 30.1509 132.439 27.8515C132.6 29.8918 134.117 31.252 136.28 31.252H139.088V26.9123H136.699V17.5206ZM131.922 22.767C131.922 25.5522 129.501 27.5924 126.564 27.5924C124.756 27.5924 123.207 26.8152 123.207 25.2283C123.207 23.188 125.66 22.6051 127.92 22.3784C130.082 22.1841 131.309 21.6983 131.922 20.7591V22.767ZM106.261 9.97475C103.549 9.97475 101.29 11.1082 99.676 12.9866V1.58691H94.8342V31.2196H99.5791V28.4992C101.193 30.4748 103.485 31.6406 106.229 31.6406C112.039 31.6406 116.429 27.0419 116.429 20.8239C116.429 14.6059 111.974 9.97475 106.261 9.97475ZM105.518 27.1714C102.065 27.1714 99.5146 24.4834 99.5146 20.8563C99.5146 17.2291 102.097 14.4763 105.551 14.4763C109.069 14.4763 111.522 17.1643 111.522 20.8563C111.522 24.4511 109.004 27.1714 105.518 27.1714ZM83.2785 9.97475C80.1475 9.97475 78.0817 11.2702 76.8551 13.0838V10.3958H72.0456V31.252H76.8874V19.9171C76.8874 16.7433 78.8886 14.4763 81.8905 14.4763C84.6665 14.4763 86.4095 16.4518 86.4095 19.3018V31.2196H91.2513V18.9131C91.2513 13.6991 88.5722 9.97475 83.2785 9.97475ZM181.76 20.1438C181.76 14.1849 177.403 9.97475 171.56 9.97475C165.363 9.97475 160.811 14.6383 160.811 20.8239C160.811 27.301 165.685 31.6406 171.657 31.6406C176.692 31.6406 180.663 28.6612 181.663 24.4187H176.628C175.918 26.2646 174.142 27.3334 171.754 27.3334C168.655 27.3334 166.299 25.3902 165.782 22.0221H181.792L181.76 20.1438ZM166.041 18.5245C166.815 15.6098 168.978 14.2172 171.496 14.2172C174.239 14.2172 176.337 15.8041 176.822 18.5245H166.041Z" fill="white" fill-opacity="0.5"/>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="exchange__item">
+            <a href="#">
+              <svg width="200" height="41" viewBox="0 0 200 41" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                <path d="M28.1329 5.3646C31.0127 5.17301 33.9241 5.74778 36.4874 7.05698C40.2848 8.94095 43.3228 12.3576 44.7152 16.3491C45.3481 18.1373 45.6646 19.9893 45.6646 21.8733V28.8663C45.6646 29.1537 45.6646 29.4411 45.6013 29.7285C45.4431 30.431 44.9367 31.0696 44.2722 31.357C43.7975 31.5805 43.2912 31.6125 42.8165 31.5167C41.7722 31.3251 40.9494 30.3352 40.9494 29.2495C40.9494 27.0782 40.9494 24.9068 40.9494 22.7354C40.981 22.1287 40.981 21.4582 40.6329 20.9153C40.0949 19.9255 38.7975 19.4465 37.7532 19.8616C36.8671 20.1809 36.2342 21.075 36.2025 22.0329C36.2025 24.2362 36.2025 26.4395 36.2025 28.6109C36.2025 29.026 36.2342 29.4411 36.1076 29.8243C35.8861 30.5906 35.2532 31.2293 34.4937 31.4528C33.481 31.7402 32.3101 31.2931 31.8038 30.3352C31.4557 29.7924 31.4874 29.0899 31.4874 28.4512C31.4874 26.2479 31.4874 24.0766 31.4874 21.8733C31.4557 20.7557 30.538 19.7658 29.462 19.6061C28.7342 19.5103 28.0063 19.7339 27.4684 20.2448C27.057 20.7557 26.8355 21.3943 26.8355 22.0329V28.4193C26.8355 28.9621 26.8987 29.505 26.7089 30.0159C26.3924 30.9419 25.5063 31.6125 24.5253 31.5805C23.5443 31.6444 22.5633 30.9419 22.2785 30.0159C22.1203 29.5369 22.1519 29.0579 22.1519 28.5789C22.1519 26.3757 22.1519 24.1724 22.1519 22.001C22.1519 20.9153 21.2975 19.9255 20.2532 19.7339C19.3038 19.5423 18.2279 20.0213 17.7532 20.9153C17.5633 21.2666 17.4367 21.6817 17.4367 22.0968V29.2495C17.4367 29.952 17.1203 30.6545 16.6139 31.1016C15.8228 31.804 14.5253 31.8679 13.7025 31.1973C13.1013 30.7822 12.7532 30.0478 12.7532 29.3134V22.001C12.7532 19.2868 13.4494 16.5407 14.7468 14.1139C15.7911 12.1341 17.2468 10.3779 18.9874 9.00481C21.4874 6.83346 24.7468 5.55619 28.1329 5.3646Z" fill="#818091"/>
+                <path d="M92.5633 13.7306H88.9874C89.1139 11.208 89.6519 8.90889 91.9304 7.47196C94.2089 6.06697 96.7405 5.71572 99.3355 5.93924C100.728 6.03503 102.152 6.35435 103.449 6.96105C105.728 8.0148 106.867 9.83491 106.867 12.3575C106.867 16.828 106.867 21.3303 106.867 25.8008C106.867 27.4293 107.184 27.7486 108.829 27.5889C108.987 27.557 109.177 27.5251 109.367 27.4931C109.399 27.5889 109.399 27.6528 109.399 27.7167V30.4309C108.101 30.8779 106.772 31.0056 105.475 30.6544C104.525 30.367 103.892 29.6964 103.576 28.7704C103.418 28.2914 103.291 27.8125 103.165 27.2696C103.038 27.4293 102.911 27.5889 102.785 27.7167C99.9367 30.6224 96.5823 31.8359 92.6266 30.814C89.8102 30.0796 87.8798 27.4931 87.8165 24.5554C87.7848 23.5975 87.8798 22.6715 88.1013 21.7454C88.6393 19.6379 90.1266 18.3607 91.9937 17.4985C93.3228 16.8918 94.7469 16.7322 96.1709 16.5406C97.8481 16.317 99.4937 16.1255 101.203 15.87C102.342 15.7103 102.911 15.1036 103.07 13.9541C103.418 11.655 102.405 10.1223 100.19 9.54752C98.8608 9.2282 97.5 9.16434 96.1709 9.41979C94.1772 9.77104 93.0696 10.9206 92.6899 12.9004C92.6582 13.1558 92.595 13.4432 92.5633 13.7306ZM103.101 18.201C101.456 19.0951 99.8418 19.3186 98.2279 19.5741C96.8671 19.7976 95.5064 19.9892 94.1772 20.4043C92.4367 20.9791 91.6456 22.4479 91.8038 24.3958C91.9304 26.0243 93.0063 27.3016 94.7469 27.5889C97.4367 28.036 99.7785 27.2696 101.677 25.2899C102.215 24.7151 102.658 23.8849 102.785 23.0866C103.038 21.49 103.006 19.9253 103.101 18.201ZM154.209 22.863C154.114 23.2462 154.082 23.5975 153.987 23.8849C152.437 28.6427 149.304 30.6863 145.506 31.1334C138.924 31.8678 135.127 27.5251 134.177 22.895C133.418 19.2228 133.513 15.5826 135.127 12.134C136.646 8.87696 139.082 6.73753 142.69 6.0989C147.025 5.33254 153.133 7.50389 154.146 14.3053C154.43 16.0616 154.462 17.8817 154.652 19.7018H137.88C138.006 22.1925 138.418 24.5554 140.222 26.3436C140.981 27.11 141.93 27.4612 142.975 27.6528C146.361 28.2595 149.177 26.631 150.285 23.3101C150.38 22.9588 150.57 22.8311 150.918 22.863C151.962 22.863 153.038 22.863 154.209 22.863ZM137.975 16.4767H150.506C150.38 15.0078 150.127 13.6348 149.43 12.3575C148.766 11.1441 147.816 10.25 146.487 9.80298C142.184 8.30219 137.722 11.7508 137.975 16.4767ZM163.228 30.3351H159.43V6.45015H163.038V9.80298C163.323 9.48366 163.481 9.29207 163.639 9.10048C166.234 6.13083 169.494 5.33254 173.165 6.25856C175.728 6.89719 177.152 8.74923 177.658 11.3038C177.848 12.3575 177.975 13.4432 177.975 14.4969C178.006 19.606 178.006 24.747 178.006 29.8561C178.006 29.9838 177.975 30.1435 177.975 30.3031H174.082V29.6645C174.082 24.8747 174.114 20.085 174.051 15.2952C174.051 14.2415 173.892 13.1558 173.576 12.134C173.07 10.4735 171.741 9.57945 170.032 9.48366C166.867 9.38786 164.367 11.0802 163.576 13.9222C163.291 14.944 163.228 16.0297 163.228 17.1153C163.196 21.3303 163.196 25.4814 163.196 29.6326V30.3351H163.228ZM113.07 6.45015H116.741V16.5725C116.962 16.349 117.089 16.2532 117.247 16.0935C120.253 12.9961 123.26 9.89877 126.266 6.8014C126.519 6.51401 126.772 6.41821 127.152 6.41821C128.544 6.45015 130 6.41821 131.551 6.41821C131.329 6.64174 131.234 6.76946 131.076 6.92912C128.418 9.61139 125.823 12.2936 123.133 14.944C122.816 15.2633 122.816 15.4549 123.038 15.7742C125.918 20.4043 128.797 25.0663 131.677 29.6964C131.772 29.8561 131.867 30.0157 131.994 30.2712C131.804 30.3031 131.677 30.3031 131.487 30.3031C130.158 30.3031 128.861 30.3031 127.532 30.3031C127.184 30.3031 126.994 30.1754 126.804 29.888C124.589 26.152 122.405 22.4479 120.19 18.68C120.095 18.5203 120 18.3607 119.873 18.1371C118.861 19.159 117.848 20.1488 116.867 21.1707C116.741 21.2984 116.709 21.5538 116.709 21.7454C116.709 24.3638 116.709 26.9822 116.709 29.6006V30.2712C115.981 30.2712 115.285 30.2712 114.589 30.2712C114.082 30.2712 113.418 30.3989 113.133 30.1435C112.88 29.92 113.038 29.1855 113.038 28.7065V7.08878C113.07 6.96105 113.07 6.73753 113.07 6.45015ZM70.7595 6.41821C67.7848 9.38786 64.8734 12.3256 61.9621 15.2314C65.095 20.3085 68.1646 25.2579 71.2658 30.3031C71.0127 30.3031 70.8545 30.3351 70.6962 30.3351C69.4304 30.3351 68.1329 30.3351 66.8671 30.3351C66.519 30.3351 66.2975 30.2073 66.1076 29.888C63.8924 26.152 61.7089 22.4479 59.4937 18.68C59.3988 18.5203 59.3038 18.3607 59.1772 18.1371C58.6393 18.7119 58.1329 19.3506 57.5317 19.7976C56.2975 20.7556 55.9177 21.9051 56.0127 23.4697C56.1393 25.5134 56.0443 27.557 56.0443 29.6006V30.2712H52.4051V6.45015H56.0443V16.4128C56.1393 16.4767 56.2026 16.5086 56.2658 16.5725C56.3608 16.4128 56.4241 16.2212 56.5507 16.0616C59.5253 12.9642 62.5317 9.89877 65.5064 6.8014C65.7912 6.51401 66.0443 6.38628 66.4557 6.41821C67.6899 6.45015 68.9241 6.41821 70.1899 6.41821C70.3165 6.41821 70.4747 6.41821 70.7595 6.41821ZM78.038 10.4097C79.8734 7.69548 81.8355 5.3964 85.4747 6.06697V10.1542C84.5253 10.2181 83.5443 10.1862 82.6266 10.3777C80.3798 10.8567 78.6709 12.9004 78.2912 15.423C78.2279 15.9339 78.1962 16.4128 78.1962 16.9237C78.1962 21.1707 78.1962 25.4495 78.1962 29.6964V30.3351H74.462V6.51401H78.038C78.038 7.75935 78.038 9.00468 78.038 10.4097Z" fill="#818091"/>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="exchange__item">
+            <a href="#">
+              <svg width="200" height="54" viewBox="0 0 200 54" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5" clip-path="url(#clip0)">
+                <path d="M10.3636 23.5253L18.0652 15.7602L25.7708 23.5294L30.2521 19.0109L18.0652 6.72266L5.88232 19.0068L10.3636 23.5253Z" fill="#818091"/>
+                <path d="M7.35706 26.717L2.83832 22.1982L-1.68065 26.7172L2.8381 31.236L7.35706 26.717Z" fill="#818091"/>
+                <path d="M10.3686 30.256L18.0674 38.0212L25.7699 30.2522L30.2521 34.7682L30.2499 34.7707L18.0674 47.0589L5.88859 34.7748L5.88232 34.7685L10.3686 30.256Z" fill="#818091"/>
+                <path d="M33.7907 31.238L38.3096 26.719L33.7909 22.2002L29.2719 26.7192L33.7907 31.238Z" fill="#818091"/>
+                <path d="M22.6849 26.8885H22.6868L18.0672 22.689L14.6533 25.7925H14.6529L14.2609 26.1491L13.4517 26.8847L13.4454 26.8905L13.4517 26.8966L18.0672 31.0923L22.6868 26.8928L22.6891 26.8905L22.6849 26.8885Z" fill="#818091"/>
+                <path d="M45.3782 16.8066H55.0165C57.4086 16.8066 59.2175 17.4268 60.4435 18.6672C61.3923 19.6278 61.8665 20.8184 61.8665 22.2387V22.2988C61.8665 22.899 61.7931 23.4294 61.6453 23.8893C61.4979 24.3499 61.3009 24.7645 61.0546 25.1347C60.809 25.5052 60.5234 25.8303 60.1988 26.1101C59.8739 26.3904 59.5248 26.6307 59.151 26.8304C60.3534 27.291 61.3 27.9159 61.9901 28.7063C62.6799 29.497 63.0252 30.5925 63.0252 31.9927V32.0525C63.0252 33.0131 62.8425 33.8533 62.4767 34.5739C62.1109 35.2939 61.5868 35.8944 60.9044 36.3747C60.222 36.855 59.4015 37.2149 58.4426 37.4552C57.4836 37.6952 56.4209 37.815 55.2547 37.815H45.3782V16.8066ZM54.0529 25.2999C55.0633 25.2999 55.8655 25.1253 56.4593 24.7749C57.0534 24.4247 57.3504 23.8593 57.3504 23.0792V23.0191C57.3504 22.3192 57.0927 21.7841 56.5779 21.4136C56.0628 21.0434 55.32 20.8582 54.3499 20.8582H49.8342V25.2999H54.0529ZM55.2711 33.7638C56.2812 33.7638 57.0729 33.5792 57.6478 33.2087C58.222 32.8385 58.5095 32.2631 58.5095 31.4827V31.4229C58.5095 30.7226 58.2419 30.1675 57.7072 29.757C57.1723 29.3474 56.3109 29.1421 55.1224 29.1421H49.8342V33.7641H55.2711V33.7638Z" fill="#818091"/>
+                <path d="M69.7479 16.8066H73.9496V37.815H69.7479V16.8066Z" fill="#818091"/>
+                <path d="M80.6722 16.8066H85.0841L95.2767 29.7419V16.8066H100V37.815H95.9295L85.3952 24.4599V37.815H80.6722V16.8066Z" fill="#818091"/>
+                <path d="M114.216 15.9663H118.558L127.731 37.8151H122.808L120.851 32.9497H111.8L109.843 37.8151H105.042L114.216 15.9663ZM119.169 28.7344L116.325 21.6996L113.482 28.7344H119.169Z" fill="#818091"/>
+                <path d="M132.773 16.8066H136.994L146.743 29.7419V16.8066H151.26V37.815H147.367L137.291 24.4599V37.815H132.773V16.8066Z" fill="#818091"/>
+                <path d="M167.884 37.8151C166.348 37.8151 164.922 37.5331 163.605 36.9703C162.289 36.4074 161.152 35.6375 160.195 34.6615C159.237 33.6858 158.489 32.5339 157.951 31.2062C157.412 29.8781 157.143 28.4598 157.143 26.9508V26.8907C157.143 25.3817 157.412 23.9687 157.951 22.6507C158.489 21.333 159.237 20.1761 160.195 19.1803C161.152 18.1845 162.299 17.3995 163.635 16.8262C164.971 16.2529 166.448 15.9663 168.064 15.9663C169.04 15.9663 169.933 16.0472 170.741 16.2076C171.548 16.369 172.281 16.5899 172.94 16.8715C173.599 17.1534 174.206 17.4954 174.766 17.8975C175.323 18.3003 175.842 18.7426 176.321 19.2256L173.389 22.6356C172.57 21.8915 171.738 21.3075 170.891 20.8853C170.042 20.463 169.09 20.2516 168.033 20.2516C167.155 20.2516 166.343 20.4228 165.595 20.7648C164.847 21.1068 164.204 21.5794 163.665 22.1828C163.127 22.7863 162.708 23.4857 162.408 24.2802C162.11 25.0752 161.96 25.9251 161.96 26.8303V26.8904C161.96 27.7956 162.11 28.6511 162.408 29.4553C162.708 30.2604 163.121 30.9642 163.65 31.5677C164.178 32.1712 164.817 32.6494 165.565 33.0015C166.313 33.3539 167.136 33.5294 168.033 33.5294C169.23 33.5294 170.242 33.3082 171.07 32.8656C171.898 32.4235 172.721 31.8197 173.538 31.0548L176.471 34.0426C175.932 34.6262 175.373 35.1495 174.795 35.6117C174.216 36.0748 173.583 36.4719 172.895 36.8041C172.207 37.1358 171.453 37.3878 170.636 37.5583C169.818 37.7292 168.901 37.8151 167.884 37.8151Z" fill="#818091"/>
+                <path d="M182.353 16.8066H198.168V20.9185H186.915V25.1802H196.818V29.2917H186.915V33.7035H198.319V37.815H182.353V16.8066Z" fill="#818091"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="200" height="53.7815" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+
+          </li>
+          <li class="exchange__item">
+            <a href="#">
+              <svg width="220" height="60" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M178.116 34.8C179.06 35.7999 184.199 40.5495 192.281 35.0222C198.142 30.467 197.975 20.6068 197.42 17.607C197.253 18.0514 190.448 32.9391 178.116 34.8ZM197.448 17.607C197.364 17.5792 189.865 16.5515 182.421 21.3289C177.783 24.3287 177.171 28.6894 177.394 31.5781C188.198 30.3837 197.198 17.9681 197.448 17.607Z" fill="#818091"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M197.448 17.607C197.364 17.5792 189.865 16.5515 182.421 21.3289C177.783 24.3287 177.171 28.6894 177.394 31.5781C188.198 30.3837 197.198 17.9681 197.448 17.607Z" fill="#818091"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M35.2666 34.2166H26.8507V29.7448H35.2666C37.3776 29.7448 38.4608 30.7447 38.4608 32.0501C38.433 33.3 37.3776 34.2166 35.2666 34.2166ZM34.9889 27.3283H26.8507V23.5509H34.9889C37.2109 23.5509 38.0719 24.3286 38.0719 25.4118C38.0719 26.3839 37.072 27.3283 34.9889 27.3283ZM37.1276 28.4671C40.6828 28.356 41.9605 26.5784 41.9605 24.6619C41.9605 22.5509 40.294 20.8289 36.211 20.8289H23.1843V36.8831H36.5998C39.9329 36.8831 42.4327 35.4943 42.4327 32.4945C42.4605 30.3836 41.0439 28.5504 37.1276 28.4671ZM46.7379 20.8289V36.8831H50.3765V20.8289H46.7379ZM65.153 23.8842H73.1523V20.8289H53.4873V23.8842H61.4866V36.9108H65.1252V23.8842H65.153ZM76.2632 20.8289V36.8831H79.9018V30.6336H88.4288V27.9949H79.9018V23.6064H93.7617V20.8289H76.2632ZM96.7059 20.8289V36.8831H100.345V20.8289H96.7059ZM108.899 24.7452L120.954 36.9108H125.065V20.8289H121.482V32.4112L109.899 20.8289H105.289V36.8831H108.899V24.7452ZM129.981 20.8289V36.8831H147.785V34.1889H133.62V29.7726H142.119V27.2728H133.62V23.6064H147.785V20.8289H129.981ZM172.172 20.8289H167.367L161.228 26.495L155.145 20.8289H150.257L158.812 28.7449L149.924 36.8831H154.729L161.173 30.9669L167.589 36.8831H172.477L163.561 28.7171L172.172 20.8289Z" fill="#818091"/>
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="plans">
+      <div class="parallax__mousemove" id="parallax6" data-speed="20"></div>
+      <div class="plans-decor-left gradient-1006px-after"></div>
+      <div class="plans-card-decor"></div>
+      <div class="plans-decor-right gradient-1006px-before"></div>
+      <ul class="plans__list" id="plans">
+        <li class="plans__item">
+          <h4 class="plans__caption localization" caption="choose_plans"></h4>
+          <ul class="items__list">
+            <li class="list__item list__item--general localization" caption="leverage"></li>
+            <li class="list__item list__item--general localization" caption="deposit"></li>
+            <li class="list__item list__item--general localization" caption="spread"></li>
+            <li class="list__item list__item--general localization" caption="swap"></li>
+            <li class="list__item list__item--general localization" caption="markets"></li>
+            <li class="list__item list__item--general localization" caption="deal_volume"></li>
+          </ul>
+          <a class="text-button plans__btn--unique localization" caption="unique_plan"></a>
+        </li>
+
+        <li class="plans__item">
+          <h4 class="plans__tariff standart localization" caption="standart"></h4>
+          <ul class="items__list">
+            <li class="list__item">200$ - 1000$</li>
+            <li class="list__item">1:200</li>
+            <li class="list__item localization" caption="from_pips_standart"></li>
+            <li class="list__item localization" caption="floating"></li>
+            <li class="list__item localization" caption="forex"></li>
+            <li class="list__item">0.10</li>
+          </ul>
+          <a class="solid-button plans__btn localization" caption="choose_plan"></a>
+        </li>
+
+        <li class="plans__item">
+          <h4 class="plans__tariff gold localization" caption="gold"></h4>
+          <ul class="items__list">
+            <li class="list__item">1000$ - 5000$</li>
+            <li class="list__item">1:200</li>
+            <li class="list__item localization" caption="from_pips_gold"></li>
+            <li class="list__item localization" caption="floating"></li>
+            <li class="list__item localization" caption="forex_materials"></li>
+            <li class="list__item">0.10</li>
+          </ul>
+          <a class="solid-button plans__btn localization" caption="choose_plan"></a>
+        </li>
+
+        <li class="plans__item">
+          <h4 class="plans__tariff platinum localization" caption="platinum"></h4>
+          <ul class="items__list">
+            <li class="list__item">5000$ - 10000$</li>
+            <li class="list__item">1:200</li>
+            <li class="list__item localization" caption="from_pips_platinum"></li>
+            <li class="list__item localization" caption="floating"></li>
+            <li class="list__item localization" caption="forex_cfd_materials_crypto"></li>
+            <li class="list__item">0.10</li>
+          </ul>
+          <a class="solid-button plans__btn localization" caption="choose_plan"></a>
+        </li>
+
+        <li class="plans__item">
+          <h4 class="plans__tariff vip localization" caption="vip"></h4>
+          <ul class="items__list">
+            <li class="list__item">10000$+</li>
+            <li class="list__item">1:200</li>
+            <li class="list__item localization" caption="from_pips_vip"></li>
+            <li class="list__item localization" caption="floating"></li>
+            <li class="list__item localization" caption="cfd_crypto_index"></li>
+            <li class="list__item">0.10</li>
+          </ul>
+          <a class="solid-button plans__btn localization" caption="choose_plan"></a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="deposits">
+      <div class="container deposits-container">
+        <div class="deposits__info">
+          <h2 class="deposits__caption localization" caption="h2_easiest_deposits"></h2>
+          <p class="deposits__description localization" caption="descr_easiest_deposits"></p>
+        </div>
+        <ul class="deposits__list">
+          <li class="deposits__item">
+            <img src="./images/visa.svg" alt="Visa">
+          </li>
+          <li class="deposits__item">
+            <img src="./images/mastercard.svg" alt="Mastercard">
+          </li>
+          <li class="deposits__item">
+            <img src="./images/bitcoin.svg" alt="Bitcoin">
+          </li>
+          <li class="deposits__item">
+            <img src="./images/qiwi.svg" alt="Qiwi">
+          </li>
+          <li class="deposits__item">
+            <img src="./images/neteller.svg" alt="Neteller">
+          </li>
+          <li class="deposits__item">
+            <img src="./images/sofort.svg" alt="Sofort">
+          </li>
+          <li class="deposits__item">
+            <img src="./images/webmoney.svg" alt="WebMoney">
+          </li>
+          <li class="deposits__item">
+            <img src="./images/skrill.svg" alt="Skrill">
+          </li>
+        </ul>
+      </div>
+    </section>
+      
+
+    <div class="main-decor-left gradient-1006px-after"></div>
+  </main>
+  <footer class="footer">
+    <div class="footer-decor-right gradient-1006px-before"></div>
+    <ul class="footer__list container">
+      <li class="footer__column footer__column--first">
+        <img src="./images/logo.svg" alt="Logo NOVA" />
+        <p class="copyright localization" caption="copyright"></p>
+        <div class="payment-systems">
+          <img class="payment-systems__image" src="./images/visa-footer.svg" alt="Visa" />
+          <img class="payment-systems__image" src="./images/mastercard-footer.svg" alt="Mastercard" />
+        </div>
+      </li>
+
+      <li class="footer__column">
+        <h4 class="footer__section localization" caption="documentation"></h4>
+        <ul class="footer__links">
+          <li class="footer__item localization">
+            <a href="#" class="footer__link localization" caption="privacy_policy"></a>
+          </li>
+          <li class="footer__item localization">
+            <a href="#" class="footer__link localization" caption="refund_policy"></a>
+          </li>
+          <li class="footer__item localization">
+            <a href="#" class="footer__link localization" caption="aml_policy"></a>
+          </li>
+          <li class="footer__item localization">
+            <a href="#" class="footer__link localization" caption="client_agreement"></a>
+          </li>
+          <li class="footer__item localization">
+            <a href="#" class="footer__link localization" caption="limitation_of_liability"></a>
+          </li>
+          <li class="footer__item localization">
+            <a href="#" class="footer__link localization" caption="know_your_customer"></a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer__column">
+        <h4 class="footer__section localization" caption="quick_links"></h4>
+        <ul class="footer__links">
+          <li class="footer__item localization">
+            <a href="#" class="footer__link localization" caption="bonuses"></a>
+          </li>
+          <li class="footer__item localization">
+            <a href="#" class="footer__link localization" caption="products"></a>
+          </li>
+          <li class="footer__item localization">
+            <a href="#" class="footer__link localization" caption="platforms"></a>
+          </li>
+          <li class="footer__item localization">
+            <a href="#" class="footer__link localization" caption="trading_information"></a>
+          </li>
+          <li class="footer__item localization">
+            <a href="#" class="footer__link localization" caption="training"></a>
+          </li>
+          <li class="footer__item localization">
+            <a href="#" class="footer__link localization" caption="anydesk"></a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer__column">
+        <h4 class="footer__section localization" caption="contacts"></h4>
+        <p class="contacts__description localization" caption="contacts__description"></p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a href="mailto:office@blueprintglobalpartners.com" class="contacts__link">
+              office@blueprintglobalpartners.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+44(7)418354988" class="contacts__link">
+              +44 (7) 418354988
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+44(800)1026025" class="contacts__link">
+              +44 (800) 1026025
+            </a>
+          </li>
+        </ul>
+
+      </li>
+
+    </ul>
+
+  </footer>
+
+  <script src="./lang/ru.js"></script>
+  <script src="./lang/en.js"></script>
+  <script src="js/localization.js"></script>
+
+  <script src="js/main.js"></script>
+
+
+
+</body>
+</html>
