@@ -30,8 +30,11 @@ window.en = {
   desc_profitability: 'The profitability of traders on our platform is 200% of the initial investment.',
 
   url: 'Here append line trading widget from https://ru.tradingview.com/',
+  assets_protection: '100% ASSETS PROTECTION',
+  unified_trading_platform: 'UNIFIED TRADING PLATFORM',
+  mac_screen_description: 'Use the software package for efficient trading. Get a personal trader\'s account for full  control of your accounts.',
+  launch: 'Launch',
 
-  
   h2_calc_your_profit: 'Calculate your profit',
   calc_description: 'Calculate your profit and start working with us now!',
 
