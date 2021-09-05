@@ -1222,7 +1222,7 @@ p {
   height: 15px;
   position: absolute;
   top: -87px;
-  right: -54px;
+  right: -60px;
   background: url(./images/rectangle.svg) center center no-repeat;
 }
 
@@ -1726,3 +1726,212 @@ p {
     margin-top: 45px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.plans__mobile{
+  display: none;
+}
+ .plans__mobile .plans__btn--unique{
+   margin-top: 50px;
+ }
+.plans__mobile .plans__slick__slider{
+   margin-top: 50px;
+ }
+
+ .plans__mobile .slick-track .slick-slide{
+   margin-right: 15px;
+ }
+
+
+
+ .plans__mobile .plans__item{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: rgba(255, 255, 255, 0.01);
+   border: 4px solid rgba(255, 255, 255, 0.03);
+   box-shadow: 50px 50px 100px rgb(0 0 0 / 15%);
+   border-radius: 60px;
+   padding: 35px 25px;
+   min-width: 312px;
+ }
+
+
+ @media screen and (max-width: 1520px) {
+   .steps__second-block::before{
+     left: -296px;
+   }
+   .steps__item::after{
+     left: -76px;
+   }
+ }
+ @media screen and (max-width: 1400px) {
+   .plans__desktop {
+     padding: 35px 25px;
+   }
+ }
+
+ @media screen and (max-width: 1200px) {
+   .container {
+     padding-left: 15px;
+     padding-right: 15px;
+   }
+
+   .range-container{
+     flex-direction: column;
+     margin-top: 80px;
+   }
+   .range-container .input-container:not(:first-child){
+     margin-left: 0;
+     margin-top: 50px;
+   }
+   .calculator__description{
+     margin-top: 50px;
+   }
+   .steps-container{
+     margin-top: 50px;
+   }
+
+   .steps{
+     padding-bottom: 120px;
+   }
+   .steps .reasons{
+     margin-top: 50px;
+   }
+   .steps .reasons__item{
+     padding-right: 50px;
+   }
+   .steps__first-block{
+     max-width: none;
+   }
+   .steps-container{
+     align-items: flex-start;
+     flex-direction: column;
+   }
+   .steps__second-block{
+     padding-top: 80px;
+     padding-left: 150px;
+     max-width: 600px;
+   }
+   .steps__second-block::before {
+     left: -224px;
+     top: 328px;
+   }
+   .steps__item::after{
+     left: -154px;
+   }
+   .crypto__exchanges{
+     padding: 0 10px;
+   }
+   .crypto-exchanges-container{
+     flex-direction: column;
+     align-items: flex-start;
+   }
+   .crypto-exchanges-container .crypto-exchanges__caption{
+      margin-bottom: 50px;
+   }
+   .crypto-exchanges-container .exchanges__list{
+      margin-left: 0;
+      max-width: none;
+   }
+   .crypto-exchanges-container .exchange__item{
+     margin-bottom: 40px;
+   }
+   .plans__desktop {
+     display: none;
+   }
+   .plans__mobile {
+     display: block;
+   }
+
+   .deposits{
+     padding-top: 90px;
+     padding-bottom: 75px;
+   }
+
+   .deposits .deposits-container{
+     flex-direction: column;
+
+   }
+   .deposits .deposits__description{
+     margin-top: 85px;
+     margin-bottom: 35px;
+   }
+   .deposits .deposits__description::after{
+     top: -46px;
+   }
+   .deposits .deposits__description::before{
+     top: -53px;
+   }
+   .deposits .deposits__item{
+     margin-bottom: 45px;
+   }
+ }
+
+
+
+ @media screen and (max-width: 1000px) {
+   .footer{
+     padding: 50px 0;
+   }
+   .footer__list{
+     flex-direction: row;
+     flex-wrap: wrap;
+   }
+   .footer__column{
+     min-height: 0;
+     max-width: none;
+     margin-bottom: 50px;
+   }
+   .footer__column--first{
+     display: block;
+   }
+   .footer__column--first p{
+     margin: 25px 0;
+   }
+ }
+ @media screen and (max-width: 850px) {
+   .footer__list{
+     flex-direction: column;
+   }
+   .footer-decor-right{
+     display: none;
+   }
+ }
+ @media screen and (max-width: 768px){
+   .container {
+     padding-left: 15px;
+     padding-right: 15px;
+   }
+ }
+
