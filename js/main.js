@@ -68,7 +68,7 @@ $("#input-1").ionRangeSlider({
 
 const headerHeight = $('.header').height();
 $(document).ready(function ($) {
-    if ($(window).width() >= '450') {
+    if ($(window).width() >= '768') {
         $('#main-content').css({'paddingTop': headerHeight + 'px'});
     }
 })
