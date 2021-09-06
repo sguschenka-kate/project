@@ -1713,10 +1713,7 @@ p {
   .about__description {
     margin-top: 31px;
   }
-  .parallax__mousemove, .parallax__scroll {
-    display: none;
-  }
-  
+
 
   .about__container {
     border: none;
@@ -2127,6 +2124,7 @@ p {
      line-height: 30px;
    }
    .steps__description{
+     max-width: 270px;
      font-size: 15px;
      line-height: 24px;
      margin-top: 30px;
@@ -2137,7 +2135,7 @@ p {
    .steps__second-block::before{
      left: 0;
      top: 20px;
-     height: 385px;
+     height: 483px;
    }
    .steps__item::after{
       left: -82px;
